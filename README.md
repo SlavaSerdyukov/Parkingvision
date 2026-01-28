@@ -53,12 +53,12 @@ parkingvision/
 │   └── parkingvision/
 │       ├── cli.py
 │       ├── app/
-│       │   ├── run_pipeline.py
-│       │   └── api/
-│       │       ├── base.py
-│       │       └── mock.py
-│       └── ml/
+│           ├── run_pipeline.py
+│           └── api/
+│           │    ├── base.py
+│           │    └── mock.py
 │           └── predictor.py
+│   
 │
 ├── tests/
 │   ├── test_api.py
