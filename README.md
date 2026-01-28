@@ -7,6 +7,33 @@ The project is designed as a **real-world, production-style system**, demonstrat
 
 This repository is intentionally built **beyond notebooks** — as a deployable, maintainable ML application.
 
+## 🧠 Design & Interview Notes
+
+**ParkingVision** was built as a **production-style ML system**, not a notebook demo.
+
+### Key design decisions:
+
+* **Simple ML model (linear regression)** used intentionally as a baseline
+  → focus is on system design, not model complexity
+* **Strict separation of concerns**
+  data providers, ML logic, pipeline orchestration, CLI
+* **CLI-first interface**
+  easy to run locally, in Docker, and in CI
+* **Mock-driven testing**
+  deterministic tests and graceful handling of missing data
+* **Dockerized & CI-ready**
+  reproducible environment and automated validation
+
+### What this demonstrates:
+
+* ML engineering mindset
+* Clean Python architecture
+* Testable ML pipelines
+* Production readiness over academic complexity
+
+The system is designed to be **extended** (new models, APIs, persistence) without refactoring the core.
+
+
 ---
 
 ## ✨ Key Highlights
