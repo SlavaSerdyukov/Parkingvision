@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parkingvision"
+version = "0.1.0"
+description = "Parking occupancy prediction pipeline"
+authors = [{ name = "Slava Serdiukov" }]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "black",
+  "ruff",
+  "isort",
+]
+viz = [
+  "matplotlib",
+]
+
+[project.scripts]
+parkingvision = "parkingvision.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
